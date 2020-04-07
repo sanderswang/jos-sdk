@@ -56,22 +56,3 @@ $resp = $c->execute($req, $c->accessToken);
 print(json_encode($resp));*/
 
 
-//header("Content-type: text/html; charset=utf-8");
-//include "JdSdk.php";
-$c = new JdClient();
-$c->appKey = "7C067389EB857F78E643A05BB3FE5700";
-$c->appSecret = "fbe3def92b90448c89e8230c3e582f99";
-$c->accessToken = "450944df8ed343378e980a0765d56cb7otq0";
-$c->serverUrl = "https://api.jd.com/routerjson";
-$req = new PopOrderSearchRequest();
-$req->setStartDate("2018-11-14 10:00:00");
-$req->setEndDate("2018-11-22 12:00:00");
-$req->setOrderState("TRADE_CANCELED");
-$req->setOptionalFields("itemInfoList,orderId,isShipmenttype,scDT,idSopShipmenttype,orderStartTime");
-$req->setPage("1");
-$req->setPageSize("20");
-$req->setSortType(1);
-$req->setDateType(0);
-$resp = $c->execute($req, $c->accessToken);
-print_r($resp);
-
