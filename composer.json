@@ -7,7 +7,7 @@
 			"ACES\\" : "security"
 		}
 	},
-	"name" : "sanderswang/jos-sdk",0.10.20.3
+	"name" : "sanderswang/jos-sdk",
 	"type" : "library",
 	"description": "aces php sdk",
 	"version": "1.0.0",
