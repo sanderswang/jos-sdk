@@ -49,7 +49,7 @@ if(!defined("EMPTYSTR")){
 }
 
 if(!defined("LOGCONSOLE")){
-    define("LOGCONSOLE", __DIR__."/../../tde.log");
+    define("LOGCONSOLE",  \LOG_PATH . "tde.log");
 }
 if(!defined("LOGLEVEL")){
     define("LOGLEVEL", Logger::DEBUG);
